@@ -1,6 +1,6 @@
 # Symfony_Auto_CRUD_and_Form
 Install Project:
-composer create-project symfony/framework-standart-edition crud
+composer create-project symfony/website-skeleton crud
 
 # Setting Database MySql Pada File .env:
 # IMPORTANT: You MUST configure your server version, either here or in config/packages/doctrine.yaml
