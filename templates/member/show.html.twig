@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Member{% endblock %}
+
+{% block body %}
+    <h1>Member</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ member.id }}</td>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <td>{{ member.nama }}</td>
+            </tr>
+            <tr>
+                <th>Fakultas</th>
+                <td>{{ member.fakultas }}</td>
+            </tr>
+            <tr>
+                <th>Jurusan</th>
+                <td>{{ member.jurusan }}</td>
+            </tr>
+            <tr>
+                <th>Alamat</th>
+                <td>{{ member.alamat }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('member_index') }}">back to list</a>
+
+    <a href="{{ path('member_edit', {'id': member.id}) }}">edit</a>
+
+    {{ include('member/_delete_form.html.twig') }}
+{% endblock %}
