@@ -2,7 +2,7 @@
 Install Project:
 composer create-project symfony/framework-standart-edition crud
 
-Setting Database MySql Pada File .env:
+# Setting Database MySql Pada File .env:
 # IMPORTANT: You MUST configure your server version, either here or in config/packages/doctrine.yaml
 DATABASE_URL=mysql://root:@127.0.0.1:3306/db_crud?serverVersion=5.7
 ###< doctrine/doctrine-bundle ###
